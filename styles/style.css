@@ -1,0 +1,350 @@
+/* Imported fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lora.family=Roboto.display=swap");
+
+/* Main code */
+body {
+  margin: 0;
+  background-color: #1f2833;
+  font-family: roboto;
+}
+
+.above_header {
+  background-color: #0b0c10;
+}
+
+header {
+  background-color: #0b0c10;
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+  color:#c5c6c7;
+}
+
+h2,
+h3 {
+  color: #c5c6c7;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.logo {
+  color: #66fcf1;
+  display: inline-block;
+  font-family: lora;
+  font-size: 36px;
+  margin-left: 30px;
+}
+
+.uslugih3 {
+  color: black;
+  text-align: center;
+}
+
+.descript {
+  margin-left: 30px;
+  margin-top: 80px;
+}
+
+.uslugi {
+  background-color: #45a29e;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+.menu__box {
+  margin-top: -60px;
+  margin-right: 20px;
+  list-style-type: none;
+  float: right;
+  font-family: roboto;
+}
+
+.menu__box li {
+  display: inline-block;
+  color: #c5c6c7;
+  font-size: 19px;
+  padding: 0 35px 0 35px;
+}
+
+.bumba {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  left: 700px;
+  top: -150px;
+}
+
+.button {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.remont {
+  width: 278px;
+  margin-left: 300px;
+  position: absolute;
+}
+
+.priceH4 {
+  color: #c5c6c7;
+  text-align: center;
+}
+
+.priceH3 {
+  color: #c5c6c7;
+  text-align: center;
+}
+
+.priceDiv {
+  display: flex;
+}
+
+.price {
+  margin: auto;
+}
+
+.priceImg {
+  width: 150px;
+  display:block;
+  margin:auto;
+}
+
+.priceImg:hover
+  {
+    animation: bounce 1s;
+  }
+
+input
+{
+    width: 0px;
+}
+
+.callh3
+{
+    text-align: center;
+}
+
+.callimg
+{
+  width: 100px;
+  display:block;
+  margin:auto;
+}
+
+.incall
+{
+  display: flex;
+}
+
+.calltxt
+{
+  text-align: center;
+}
+
+.callart
+{
+  margin: auto;
+}
+
+footer
+{
+  background-color: #0B0C10;
+  margin: auto;
+  color: #c5c6c7;
+}
+
+.footimg
+{
+  width: 24px;
+}
+
+/* media brakepoints */
+
+@media screen and (max-width: 320px) {
+  .bumba {
+    width: 0px;
+  }
+
+  .remont {
+    width: 0px;
+  }
+
+  .priceDiv {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .priceImg {
+    width: 150px;
+    margin: auto;
+  }
+
+  .uslugi {
+    background-color: #1f2833;
+    color: #c5c6c7;
+    padding: 0;
+    margin: 0;
+  }
+  .uslugih3 {
+    color: #c5c6c7;
+  }
+
+  .logo
+  {
+    text-align: center;
+  }
+
+  .button
+  {
+      margin-top: 80px;
+  }
+
+  .priceImg:hover
+  {
+    animation: bounce 1s;
+  }
+
+  h2,
+h3 {
+  color: #c5c6c7;
+  text-align: center;
+  margin-right: 45px;
+}
+
+.priceH3
+{
+    margin-left:  45px;
+}
+
+.incall
+{
+  display: inline;
+}
+
+.callart
+{
+  text-align: center;
+}
+
+.callimg:hover
+{
+  animation: bounce 1s;
+}
+
+.footimg
+{
+  width: 0;
+}
+
+/*menu*/
+
+/* скрываем чекбокс */
+#menu__toggle {
+    opacity: 0;
+  }
+  /* стилизуем кнопку */
+  .menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center; /* центрируем содержимое кнопки */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    z-index: 1;
+  }
+  /* добавляем "гамбургер" */
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #c5c6c7;
+  }
+  .menu__btn > span::before {
+    content: "";
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: "";
+    top: 8px;
+  }
+  /* контейнер меню */
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: rgb(44, 44, 44);
+  }
+  /* элементы меню */
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  .menu__item:hover {
+    background-color: #cfd8dc;
+  }
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+
+}
+
+@media (min-width: 1024px)
+{
+  .above_header
+  {
+    text-align: left;
+  }
+
+  .bumba {
+    width: 0px;
+  }
+
+  .remont {
+    width: 0px;
+  }
+
+  .uslugi
+  {
+    margin-left: 27%;
+  }
+
+
+}
