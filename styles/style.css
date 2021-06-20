@@ -172,7 +172,7 @@ footer
 
 /* media brakepoints */
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) {
   .bumba {
     width: 0px;
   }
