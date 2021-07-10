@@ -325,26 +325,3 @@ h3 {
   }
 
 }
-
-@media (min-width: 1280px)
-{
-  .above_header
-  {
-    text-align: left;
-  }
-
-  .bumba {
-    width: 0px;
-  }
-
-  .remont {
-    width: 0px;
-  }
-
-  .uslugi
-  {
-    margin-left: 27%;
-  }
-
-
-}
