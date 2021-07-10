@@ -1,30 +1,20 @@
 /* Imported fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lora.family=Roboto.display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* Main code */
 body {
   margin: 0;
-  background-color: #1f2833;
   font-family: roboto;
 }
 
-.above_header {
-  background-color: #0b0c10;
-}
-
 header {
-  background-color: #0b0c10;
   margin-bottom: 40px;
 }
 
 a {
   text-decoration: none;
-  color:#c5c6c7;
-}
 
-h2,
-h3 {
-  color: #c5c6c7;
 }
 
 h2 {
@@ -36,7 +26,7 @@ h3 {
 }
 
 .logo {
-  color: #66fcf1;
+
   display: inline-block;
   font-family: lora;
   font-size: 36px;
@@ -117,62 +107,65 @@ h3 {
 
 .priceImg {
   width: 150px;
-  display:block;
-  margin:auto;
+  display: block;
+  margin: auto;
 }
 
-.priceImg:hover
-  {
-    animation: bounce 1s;
-  }
-
-input
-{
-    width: 0px;
+.priceImg:hover {
+  animation: bounce 1s;
 }
 
-.callh3
-{
-    text-align: center;
+input {
+  width: 0px;
+  background-color: #0b0c10;
 }
 
-.callimg
-{
-  width: 100px;
-  display:block;
-  margin:auto;
-}
-
-.incall
-{
-  display: flex;
-}
-
-.calltxt
-{
+.callh3 {
   text-align: center;
 }
 
-.callart
-{
+.callimg {
+  width: 100px;
+  display: block;
   margin: auto;
 }
 
-footer
-{
-  background-color: #0B0C10;
-  margin: auto;
-  color: #c5c6c7;
+.incall {
+  display: flex;
 }
 
-.footimg
-{
+.calltxt {
+  text-align: center;
+}
+
+.callart {
+  margin: auto;
+}
+
+.themeButton{
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  padding-right: 109px;
+  font-weight: 800;
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+
+footer {
+  margin: auto;
+}
+
+.footimg {
   width: 24px;
 }
 
 /* media brakepoints */
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .bumba {
     width: 0px;
   }
@@ -201,57 +194,49 @@ footer
     color: #c5c6c7;
   }
 
-  .logo
-  {
+  .logo {
     text-align: center;
   }
 
-  .button
-  {
-      margin-top: 80px;
+  .button {
+    margin-top: 80px;
   }
 
-  .priceImg:hover
-  {
+  .priceImg:hover {
     animation: bounce 1s;
   }
 
   h2,
-h3 {
-  color: #c5c6c7;
-  text-align: center;
-  margin-right: 45px;
-}
+  h3 {
+    color: #c5c6c7;
+    text-align: center;
+    margin-right: 45px;
+  }
 
-.priceH3
-{
-    margin-left:  45px;
-}
+  .priceH3 {
+    margin-left: 45px;
+  }
 
-.incall
-{
-  display: inline;
-}
+  .incall {
+    display: inline;
+  }
 
-.callart
-{
-  text-align: center;
-}
+  .callart {
+    text-align: center;
+  }
 
-.callimg:hover
-{
-  animation: bounce 1s;
-}
+  .callimg:hover {
+    animation: bounce 1s;
+  }
 
-.footimg
-{
-  width: 0;
-}
+  .footimg {
+    width: 0;
+  }
 
-/*menu*/
+  /*menu*/
 
-/* скрываем чекбокс */
-#menu__toggle {
+  /* скрываем чекбокс */
+  #menu__toggle {
     opacity: 0;
   }
   /* стилизуем кнопку */
@@ -323,5 +308,49 @@ h3 {
     visibility: visible;
     left: 0;
   }
+}
 
+
+/* темная тема */
+
+.darkTheme {
+  background-color: #1f2833;
+  color: #fff;
+  transition: all ease 0.2s;
+}
+
+.darkTheme header{
+  background-color: #0b0c10;
+  color: #c5c6c7;
+}
+
+.darkTheme ul
+{
+  color: #000;;
+}
+
+.darkTheme a{
+  color: #c5c6c7;
+}
+
+.darkTheme .callh3{
+  color: #c5c6c7;
+}
+
+.darkTheme .logo{
+  color: #66fcf1;
+}
+
+.darkTheme input{
+  background-color: #45a29e;
+  color: #121212;
+}
+
+.darkTheme h1{
+  color: #fff;
+}
+
+.darkTheme footer{
+  background-color: #0b0c10;
+  color: #c5c6c7;
 }
