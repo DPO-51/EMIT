@@ -88,12 +88,14 @@ h3 {
 }
 
 .priceH4 {
-  color: #c5c6c7;
   text-align: center;
 }
 
 .priceH3 {
-  color: #c5c6c7;
+  text-align: center;
+}
+
+.priceh3 {
   text-align: center;
 }
 
@@ -103,6 +105,7 @@ h3 {
 
 .price {
   margin: auto;
+  padding: 10px;
 }
 
 .priceImg {
@@ -358,5 +361,26 @@ footer {
 
 .darkTheme footer{
   background-color: #0b0c10;
+  color: #c5c6c7;
+}
+
+.darkTheme .price
+{
+  background-color: #45a29e;
+  border-radius: 10px;
+}
+
+.darkTheme .priceh3
+{
+  color: #000;
+}
+
+.darkTheme .priceH4
+{
+  color: #000;
+}
+
+.darkTheme .priceH3
+{
   color: #c5c6c7;
 }
