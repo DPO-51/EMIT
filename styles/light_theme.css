@@ -38,9 +38,20 @@
     color: ghostwhite;
 }
 
+.lightTheme .priceh3
+{
+    color: #068d9d;
+}
+
+.lightTheme .price
+{
+  background-color: #aeecef;
+  border-radius: 10px;
+}
+
 .lightTheme .priceH4
 {
-    color: ghostwhite;
+    color: #068d9d;
 }
 
 .lightTheme .calltxt
